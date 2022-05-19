@@ -5,7 +5,9 @@ class UberX extends Car {
     String model;
 
 
-    public UberX(String license, Account driver){
+    public UberX(String license, Account driver, String brand, String model){
         super(license, driver);
+        this.brand = brand;
+        this.model = model;
     }
 }

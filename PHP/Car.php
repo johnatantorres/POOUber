@@ -1,11 +1,12 @@
 <?php
+require_once('account.php')
 class Car {
     public $id;
     public $license;
     public $driver;
     public $passenger;
 
-    function __contruct($license, $driver){
+    function __construct($license, $driver){
         $this->license = $license;
         $this->driver = $driver;
     }
@@ -14,3 +15,4 @@ class Car {
         echo "license: $this->license, conductor: {$this->driver->name}, document: {$this->driver->document}";
     }
 }
+?>
